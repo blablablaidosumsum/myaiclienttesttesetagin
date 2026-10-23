@@ -68,7 +68,7 @@ public class MyClientHud implements ClientModInitializer {
 
     private void extract(GuiGraphicsExtractor g, DeltaTracker tickCounter) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null || mc.options.hideGui) {
+           if (mc.player == null) {
             return;
         }
 
